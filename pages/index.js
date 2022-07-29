@@ -9,17 +9,17 @@ export default function Home({ posts }) {
   return (
     <div className="container">
       <Head>
-        <title>Headless WP Next Starter</title>
+        <title>Headless WP Next Starter React!!!</title>
         <link rel="icon" href="favicon.ico"></link>
       </Head>
 
       <main>
         <h1 className="title">
-          Headless WordPress Next.js Starter
+          Headless WordPress Next.js Starter Brid
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Stop started by editing <code>pages/index.js</code>
         </p>
 
         <div className="grid">

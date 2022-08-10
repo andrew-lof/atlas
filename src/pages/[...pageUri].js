@@ -39,6 +39,7 @@ export async function getStaticProps(context) {
     Page,
     client,
     notFound: await is404(context, { client }),
+    revalidate: 10
   });
 }
 

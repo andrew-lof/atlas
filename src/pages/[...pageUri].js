@@ -14,7 +14,7 @@ export function PageComponent({ page }) {
       <main>
           <div className="siteHeader">
             <h1 className="title">
-                {page.title()}
+                Test {page.title()}
             </h1>
             <p>✍️  &nbsp;&nbsp;{`${page.author.node.firstName} ${page.author.node.lastName}`} | 🗓️ &nbsp;&nbsp;{ new Date(page.date).toLocaleDateString() }</p>
           </div>

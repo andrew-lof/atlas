@@ -1,6 +1,14 @@
-import { getClient } from '@faustjs/next';
+/**
+ * GQTY: You can safely modify this file and Query Fetcher based on your needs
+ */
 
-import { generatedSchema, scalarsEnumsHash } from './schema.generated';
+ import { getClient } from '@faustjs/next';
+
+// import { generatedSchema, scalarsEnumsHash } from "./schema.generated";
+import {
+  generatedSchema,
+  scalarsEnumsHash,
+} from './schema.generated';
 
 export const client = getClient({
   schema: generatedSchema,
@@ -15,4 +23,9 @@ export function serverClient(req) {
   });
 }
 
-export * from './schema.generated';
+export * from "./schema.generated";
+
+
+
+
+

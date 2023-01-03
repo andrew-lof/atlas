@@ -1,25 +1,24 @@
 {
+  "name": "@faustwp/getting-started-example",
   "private": true,
+  "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "wpe-build": "next build",
-    "generate": "gqty generate"
+    "dev": "faust dev",
+    "build": "faust build",
+    "generate": "faust generatePossibleTypes",
+    "start": "faust start"
   },
   "dependencies": {
-    "@apollo/client": "^3.5.10",
-    "@faustjs/core": "^0.15.7",
-    "@faustjs/next": "^0.15.7",
-    "graphql": "^16.3.0",
-    "next": "latest",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sass": "^1.44.0",
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "@gqty/cli": "^3.3.1-alpha-74109b4.0",
-    "dotenv-flow": "^3.2.0"
+    "@apollo/client": "^3.6.6",
+    "@faustwp/cli": "0.2.0",
+    "@faustwp/core": "0.2.0",
+    "@wordpress/base-styles": "^4.7.0",
+    "@wordpress/block-library": "^7.13.0",
+    "classnames": "^2.3.1",
+    "graphql": "^16.6.0",
+    "next": "^12.1.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.54.9"
   }
 }

@@ -5,7 +5,7 @@ export default function Page(props) {
 }
 
 export function getStaticProps(ctx) {
-  return getWordPressProps({ ctx });
+  return getWordPressProps({ ctx , revalidate: process.env.revalidate });
 }
 
 export async function getStaticPaths() {

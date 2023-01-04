@@ -15,4 +15,7 @@ module.exports = withFaust({
     locales: ['en'],
     defaultLocale: 'en',
   },
+  env: {
+    revalidate: 1
+  }
 });

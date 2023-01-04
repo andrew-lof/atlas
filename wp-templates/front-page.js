@@ -21,6 +21,7 @@ export default function Component() {
   const primaryMenu = data?.headerMenuItems?.nodes ?? [];
   const footerMenu = data?.footerMenuItems?.nodes ?? [];
 
+  console.log(data.page)
   return (
     <>
       <SEO title={siteTitle} description={siteDescription} />
@@ -31,9 +32,9 @@ export default function Component() {
       />
       <Main>
         <Container>
-          <Hero title={'Front Page'} />
+          <Hero title={data.page.title} />
           <div className="text-center">
-            <p>This page is utilizing the "front-page" WordPress template.</p>
+            <div dangerouslySetInnerHTML={{__html: data.page.content}}/>
             <code>./wp-templates/front-page.js</code>
           </div>
         </Container>
@@ -62,6 +63,10 @@ Component.query = gql`
       nodes {
         ...NavigationMenuItemFragment
       }
+    }
+    page(id: "2000", idType: DATABASE_ID){
+      title
+      content(format: RENDERED)
     }
   }
 `;
